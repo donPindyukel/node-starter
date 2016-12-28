@@ -32,6 +32,7 @@ export default class App {
 	}
 
 	getDatabase() {
+		mongoose.Promise = Promise;
 		return {
 			run: () => {
 				new Promise((resolve) => {
